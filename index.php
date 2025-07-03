@@ -2,28 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-
-<head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <title>Darkness Gym</title>
-    <link rel="icon" href="assets/secreto.png">
+    <link rel="stylesheet" href="print.css">
+    <title></title>
+   
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="file:///C:/Users/soare/Downloads/low.html--main/low.html--main/selva/selva.html">Página Inicial</a></li>
-            <li><a href="faceplane.html">Planos</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-        </ul>
-    </nav>
+   
 <?php
 
 // Configurações do banco de dados
@@ -75,6 +61,7 @@ if (!empty($dados["Sendlogin"])) {
 }
   ?>
 <!-- Inicio do formulario --> 
+ 
  <div class=form>
 <form method="POST" action="">
 <div class="form-group">
@@ -93,17 +80,11 @@ if (!empty($dados["Sendlogin"])) {
                 <input type="tel" id="telefone" placeholder="Telefone" required>
             </div>
             
-
-
 <input type="text" name="usuario" placeholder="digite o usuário" required><br><br>
-
-
 <input type="password" name="senha_usuario" placeholder="digite a senha" required><br><br>
-
-
 <input type="submit" name="Sendlogin" value="Acessar">
 </form>
 <!-- fim do formulario -->
-    </div>
+ 
 </body>
 </html>
