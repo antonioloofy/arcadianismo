@@ -73,20 +73,37 @@ if (!empty($dados["Sendlogin"])) {
         echo "<p style='color: red'>Erro: Usuário não encontrado!</p>";
     }
 }
-
-?>
-<!-- Inicio do formulario -->
+  ?>
+<!-- Inicio do formulario --> 
+ <div class=form>
 <form method="POST" action="">
+<div class="form-group">
+                
+<h1>login</h1>
 
-<label>Usuário: </label>
+
+               <input type="text" id="nome" placeholder="Nome completo" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" placeholder="E-mail" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+            </div>
+            
+
+
 <input type="text" name="usuario" placeholder="digite o usuário" required><br><br>
 
-<label>Senha: </label>
+
 <input type="password" name="senha_usuario" placeholder="digite a senha" required><br><br>
+
 
 <input type="submit" name="Sendlogin" value="Acessar">
 </form>
 <!-- fim do formulario -->
-    
+    </div>
 </body>
 </html>
