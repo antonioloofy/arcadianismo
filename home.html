@@ -1,23 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".css">
-    <title></title>
-    <title>Document</title>
+     <link rel="stylesheet" href="home.css">
+    <title>Galeria de Artesanato</title>
+    
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="file:///C:/Users/soare/Downloads/low.html--main/low.html--main/selva/selva.html">Página Inicial</a></li>
-            <li><a href="faceplane.html">Planos</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">
+ <img src="assets/minhalogo.png" alt="Logo da marca" width="75" height="75" 
+style="border-radius:50% ;">
+          
+        </div>
+        <nav>
+            <ul>
+            <div>
+  <div>
+    <input type="search" id="form1" placeholder="buscar na galeria" />
+    <label for="form1"></label>
+  </div>
+  <button type="button">
+    <i></i>
+  </button>
+</div>
 
-    
+
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ESCRIBE</a></li>
+                <li><a href="#">CIMATURAS</a></li>
+                <li><a href="#">PASSAGEM</a></li>
+                <li><a href="#">LOJA</a></li>
+                <li><a href="#">CONTIGIO</a></li>
+                <li><a href="#" class="login-btn">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrossel Simples</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carousel {
+      position: relative;
+      width: 800px;
+      height: 400px;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .carousel-slide {
+      flex: 0 0 100%;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      color: white;
+    }
+
+    .slide1 { background: #777; }
+    .slide2 { background: #666; }
+    .slide3 { background: #555; }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+  </style>
+</head>
+<body>
+
+  <div class="carousel">
+    <div class="carousel-inner" id="carousel-inner">
+      <div class="carousel-slide slide1">First slide</div>
+      <div class="carousel-slide slide2">Second slide</div>
+      <div class="carousel-slide slide3">Third slide</div>
+    </div>
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
+
+    function moveSlide(step) {
+      currentIndex += step;
+      if (currentIndex < 0) currentIndex = slides.length - 1;
+      if (currentIndex >= slides.length) currentIndex = 0;
+      document.getElementById("carousel-inner").style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  </script>
+
 </body>
-    </html>
+</html>
+    
+    <main>
+        <h1 class="exhibition-title">SELVAGEM</h1>
+        <p class="exhibition-subtitle">EX POSICAO INDIVIDUAL NA GALERIA DE ARTESANATO. SAO PAULO, SP</p>
+        <p class="date">19 DE FEVEREIRO DE 2013</p>
+        <a href="#" class="cta-button">VISITE A LOJA ONLINE</a>
+        <p class="chat-invite">Vamos conversar</p>
+    </main>
+    
+    <footer>
+        © 2025 Galeria de Artesanato. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
